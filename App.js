@@ -4,9 +4,9 @@ import { View, FlatList, StyleSheet, Text } from 'react-native';
 
 export default function App() {
   const [todos, setTodos] = useState([
-    {text: 'buy coffee', key: '1'},
-    {text: 'buy coffee', key: '1'},
-    {text: 'buy coffee', key: '1'},
+    {text: 'Conan', key: '1'},
+    {text: 'Stardew Valley', key: '1'},
+    {text: 'Path of Exile', key: '1'},
   ]);
 
 
