@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import { StatusBar } from 'expo-status-bar';
 import { View, FlatList, StyleSheet, Text } from 'react-native';
-
+import Header from './components/header';
 export default function App() {
   const [todos, setTodos] = useState([
     {text: 'Conan', key: '1'},
@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {/* {heaeder} */}
+      <Header />
       <View style={styles.content}>
         {/* to form */}
         <View style={styles.list}>
