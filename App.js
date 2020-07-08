@@ -37,4 +37,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  content: {
+    padding: 40,
+  },
+  list: {
+    marginTop: 20,
+  }
 });
