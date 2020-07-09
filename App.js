@@ -6,11 +6,16 @@ import TodoItem from './components/todoitem'
 
 export default function App() {
   const [todos, setTodos] = useState([
-    {text: 'Conan', key: '1'},
-    {text: 'Stardew Valley', key: '1'},
-    {text: 'Path of Exile', key: '1'},
+    {text: 'Develop first app', key: '1'},
+    {text: 'Workout', key: '2'},
+    {text: 'Help Stella at Together', key: '3'},
   ]);
 
+  const pressHandler = (key) => {
+    setTodos(prevTodos => {
+      return prevTodos.filter(todo => todo.key != key);
+    })
+  }
 
   return (
     <View style={styles.container}>
@@ -21,7 +26,7 @@ export default function App() {
           <FlatList 
             data={todos}
             renderItem={({ item }) => (
-              <TodoItem />
+              <TodoItem item={item} pressHandler={pressHandler}/>
             )}
           />
         </View>
