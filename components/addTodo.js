@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, TextInput, Button } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function AddTodo() {
 
@@ -13,7 +13,7 @@ export default function AddTodo() {
         <View>
             <TextInput 
                 style={styles.input}
-                placeholder='new task...'
+                placeholder='add a game to the docket...'
                 onChangeText={changeHandler}
             />
         </View>

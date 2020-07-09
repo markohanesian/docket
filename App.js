@@ -3,12 +3,14 @@ import React, { useState } from 'react';
 import { View, FlatList, StyleSheet, Text } from 'react-native';
 import Header from './components/header';
 import TodoItem from './components/todoitem'
+import addTodo from './components/addTodo'
+import AddTodo from './components/addTodo';
 
 export default function App() {
   const [todos, setTodos] = useState([
-    {text: 'Develop first app', key: '1'},
-    {text: 'Workout', key: '2'},
-    {text: 'Help Stella at Together', key: '3'},
+    {text: 'Conan Exiles', key: '1'},
+    {text: 'Stardew Valley', key: '2'},
+    {text: 'Payday 2', key: '3'},
   ]);
 
   const pressHandler = (key) => {
@@ -21,7 +23,7 @@ export default function App() {
     <View style={styles.container}>
       <Header />
       <View style={styles.content}>
-        {/* to form */}
+        <AddTodo />
         <View style={styles.list}>
           <FlatList 
             data={todos}
