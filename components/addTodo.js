@@ -16,6 +16,7 @@ export default function AddTodo() {
                 placeholder='add a game to the docket...'
                 onChangeText={changeHandler}
             />
+            <Button onPress={() => console.log(text)} title='add game' color='#27513b'></Button>
         </View>
     )
 }
