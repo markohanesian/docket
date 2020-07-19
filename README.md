@@ -17,6 +17,7 @@ Gaming is one of my favorite pastimes with friends. I would like to keep a curre
 Docket is a streamlined mobile app that allows gamers to view, add, and delete games from their list so they can decide on what to play. 
 
 # Planned Features/Outstanding Issues
+* Add comments to code functions
 * Functional login and signup 
 * Updated UI
 * Account collaboration
