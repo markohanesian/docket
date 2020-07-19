@@ -11,10 +11,7 @@ Gaming is one of my favorite pastimes with friends. I would like to keep a curre
 # Built With
 * React Native
 * Material UI
-* Spotify API
-* MongoDB
-* Express
-* Node
+* Expo
 
 # Description
 Docket is a streamlined mobile app that allows gamers to view, add, and delete games from their list so they can decide on what to play. 
