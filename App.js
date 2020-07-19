@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { StatusBar } from 'expo-status-bar';
-import { View, FlatList, StyleSheet, Text } from 'react-native';
+import { View, FlatList, StyleSheet, Text, Alert } from 'react-native';
 import Header from './components/header';
 import TodoItem from './components/todoitem'
 import addTodo from './components/addTodo'
@@ -20,12 +20,20 @@ export default function App() {
   }
 
   const submitHandler = (text) => {
-    setTodos((prevTodos) => {
-      return [
-        { text: text, key: Math.random().toString() },
-        ...prevTodos
-      ];
-    })
+
+    if(text.length > 3){
+      setTodos((prevTodos) => {
+        return [
+          { text: text, key: Math.random().toString() },
+          ...prevTodos
+        ];
+      });
+    } else {
+      Alert.alert('OOPS!', 'game title must be more than 3 characters long', [
+        {text: 'Understood', onPress: () => console.log('alert closed')}
+      ]);
+    }
+    
   }
 
   return (
