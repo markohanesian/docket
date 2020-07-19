@@ -29,8 +29,8 @@ export default function App() {
         ];
       });
     } else {
-      Alert.alert('OOPS!', 'game title must be more than 3 characters long', [
-        {text: 'Understood', onPress: () => console.log('alert closed')}
+      Alert.alert('ERROR', 'game title must be more than 3 characters long', [
+        {text: 'CLOSE', onPress: () => console.log('alert closed')}
       ]);
     }
     
