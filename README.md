@@ -1,5 +1,4 @@
-# Project Title
-docket
+# docket
 
 ![docket app demo](https://media.giphy.com/media/j2GMgsBhTw78UJZM8C/giphy.gif)
 
