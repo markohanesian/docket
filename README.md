@@ -1,6 +1,10 @@
 # Project Title
 docket
 
+![docket app demo](https://media.giphy.com/media/j2GMgsBhTw78UJZM8C/giphy.gif)
+
+
+
 # User Story
 Gaming is one of my favorite pastimes with friends. I would like to keep a current list of our favorite games to play so that we can make a quick decision on what to play when we get together. I need a streamlined app that will allow me to view, add, and delete games from the docket.
 
@@ -26,4 +30,4 @@ Docket is a streamlined mobile app that allows gamers to view, add, and delete g
 * [Mark Ohanasian](https://github.com/markohanesian) 
 
 # Acknowledgments
-* React Native Tutorial #9 - Todo App made by The Net Ninja[link]{https://www.youtube.com/watch?v=uLHFPt9B2Os)
+* I learned a TON about views, flexbox, and other helpful list app components from this tutorial - Todo App made by The Net Ninja[link]{https://www.youtube.com/watch?v=uLHFPt9B2Os)
