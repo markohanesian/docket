@@ -2,9 +2,6 @@
 
 ![docket app demo](https://media.giphy.com/media/j2GMgsBhTw78UJZM8C/giphy.gif)
 
-
-
-# User Story
 ## User Story
 Gaming is one of my favorite pastimes with friends. I would like to keep a current list of our favorite games to play so that we can make a quick decision on what to play when we get together. I need a streamlined app that will allow me to view, add, and delete games from the docket.
 
