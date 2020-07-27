@@ -28,9 +28,11 @@ Docket is a streamlined mobile app that allows gamers to view, add, and delete g
 * [Mark Ohanasian](https://github.com/markohanesian) 
 
 # Acknowledgments
-* I learned a TON about views, flexbox, and other helpful list app components from this tutorial - Todo App made by The Net Ninja[link]{https://www.youtube.com/watch?v=uLHFPt9B2Os)
-## Acknowledgments
 * React Native Tutorial #9 - Todo App made by The Net Ninja[link]{https://www.youtube.com/watch?v=uLHFPt9B2Os)
+
+## License
+
+* [MIT](https://opensource.org/licenses/MIT)
 
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 ![GitHub release](https://img.shields.io/github/v/release/markohanesian/Burger-Logger)
