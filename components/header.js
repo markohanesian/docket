@@ -11,14 +11,15 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     header: {
-        height: 90,
-        paddingVertical: 35,
-        backgroundColor: '#27513b'
+        height: 120,
+        // paddingVertical: 50,
+        // backgroundColor: '#27513b'
     },
     title: {
+        paddingVertical: 60,
         textAlign: 'center',
         color: '#ecb87f',
-        fontSize: 20,
+        fontSize: 40,
         fontWeight: 'bold',
     }
   });
