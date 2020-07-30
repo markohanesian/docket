@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, TextInput, Button } from 'react-native';
+import { StyleSheet, View, TextInput, TouchableOpacity, Text } from 'react-native';
 
 export default function AddTodo({ submitHandler }) {
 
@@ -18,12 +18,9 @@ export default function AddTodo({ submitHandler }) {
                 onChangeText={changeHandler}
                 // clearTextOnFocus='true'
             />
-            <Button
-                onPress={() => submitHandler(text)} 
-                title='add game' 
-                color='#2DCCCF'
-                accessibilityLabel='click this button to add game'
-                />
+            <TouchableOpacity style={styles.btn} onPress={() => submitHandler(text)}>
+                <Text style={styles.btnText}>add game</Text>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -38,5 +35,16 @@ const styles = StyleSheet.create({
         backgroundColor: '#2DCCCF',
         flexDirection: 'row',
         color: 'white'
-    }
-})
+    },
+    btn: {
+        height: 45,
+        // borderRadius: 8,
+        elevation: 3,
+        backgroundColor: "#AB47BC",
+        justifyContent: "center",
+        paddingHorizontal: 8
+      },
+      btnText: {
+        color: "#fff",
+      },
+});
