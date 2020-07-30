@@ -1,10 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons';
 
 
 export default function Header() {
     return (
         <View style={styles.header}>
+            <View style={styles.logo}>
+                <MaterialIcons name="gavel" size={58} color="#AB47BC"/>
+            </View>
             <Text style={styles.title}>Docket</Text>
         </View>
     )
@@ -17,10 +21,16 @@ const styles = StyleSheet.create({
         // backgroundColor: '#27513b'
     },
     title: {
-        paddingVertical: 60,
+        paddingVertical: 0,
         textAlign: 'center',
         color: '#2DCCCF',
         fontSize: 40,
         fontWeight: 'bold',
+    },
+    logo: {
+        textAlign: 'center',
+        flexDirection: 'column',
+        paddingTop: 20,
+        paddingBottom: 0,
     }
   });
