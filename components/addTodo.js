@@ -16,7 +16,7 @@ export default function AddTodo({ submitHandler }) {
                 placeholder='add a game to the docket...'
                 placeholderTextColor='white'
                 onChangeText={changeHandler}
-                clearTextOnFocus='true'
+                // clearTextOnFocus='true'
             />
             <Button
                 onPress={() => submitHandler(text)} 
