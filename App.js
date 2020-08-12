@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
-// import { StatusBar } from 'expo-status-bar';
 import { View, FlatList, StyleSheet, Text, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Header from './components/header';
 import TodoItem from './components/todoitem'
-import addTodo from './components/addTodo'
 import AddTodo from './components/addTodo';
-import Sandbox from './components/sandbox';
 
 export default function App() {
   const [todos, setTodos] = useState([
