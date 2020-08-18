@@ -2,12 +2,12 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React, { useState } from 'react';
-import { View, FlatList, StyleSheet, Text, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { Button, View, FlatList, StyleSheet, Text, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Header from './components/header';
 import TodoItem from './components/todoitem'
 import AddTodo from './components/addTodo';
 
-function HomeScreen() {
+function HomeScreen({ navigation }) {
 
   const [todos, setTodos] = useState([
     {text: 'Conan Exiles', key: '1'},
@@ -44,6 +44,10 @@ function HomeScreen() {
       console.log('dismissed keyboard')
     }}>
       <View style={styles.container}>
+        <Button
+          title="Go to News"
+          onPress={() => navigation.navigate('News')}
+        />
         <Header />
         <View style={styles.content}>
           <AddTodo submitHandler={submitHandler} />
@@ -61,13 +65,23 @@ function HomeScreen() {
   );
 }
 
+function NewsScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>News Screen</Text>
+    </View>
+  );
+}
+
+
 const Stack = createStackNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="News">
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="News" component={NewsScreen}   options={{ title: 'News' }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
