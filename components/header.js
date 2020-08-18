@@ -17,10 +17,7 @@ export default function Header() {
 const styles = StyleSheet.create({
     header: {
         height: 120,
-        // display: 'flex',
         alignItems: 'center',
-        // paddingVertical: 50,
-        // backgroundColor: '#27513b'
     },
     title: {
         paddingVertical: 0,
