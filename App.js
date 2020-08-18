@@ -6,6 +6,8 @@ import { Button, View, FlatList, StyleSheet, Text, Alert, TouchableWithoutFeedba
 import Header from './components/header';
 import TodoItem from './components/todoitem'
 import AddTodo from './components/addTodo';
+import firebase from "firebase";
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 function HomeScreen({ navigation }) {
 
