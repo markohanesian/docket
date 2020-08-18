@@ -1,10 +1,14 @@
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import React, { useState } from 'react';
 import { View, FlatList, StyleSheet, Text, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Header from './components/header';
 import TodoItem from './components/todoitem'
 import AddTodo from './components/addTodo';
 
-export default function App() {
+function HomeScreen() {
+
   const [todos, setTodos] = useState([
     {text: 'Conan Exiles', key: '1'},
     {text: 'Stardew Valley', key: '2'},
@@ -16,9 +20,9 @@ export default function App() {
       return prevTodos.filter(todo => todo.key != key);
     })
   }
-
+  
   const submitHandler = (text) => {
-
+  
     if(text.length > 3){
       setTodos((prevTodos) => {
         return [
@@ -35,7 +39,6 @@ export default function App() {
   }
 
   return (
-    // <Sandbox />
     <TouchableWithoutFeedback onPress= {() => {
       Keyboard.dismiss();
       console.log('dismissed keyboard')
@@ -58,6 +61,18 @@ export default function App() {
   );
 }
 
+const Stack = createStackNavigator();
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -75,3 +90,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
   }
 });
+
+export default App;
+
