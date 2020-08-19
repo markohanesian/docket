@@ -81,7 +81,8 @@ const Stack = createStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home"> {/* This is where you set the start/home screen */}
+      {/* Configure the home screen using initialRouteName below */}
+      <Stack.Navigator initialRouteName="Home"> 
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="News" component={NewsScreen}   options={{ title: 'News' }}/>
       </Stack.Navigator>
