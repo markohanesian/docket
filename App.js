@@ -8,9 +8,12 @@ import TodoItem from './components/todoitem'
 import AddTodo from './components/addTodo';
 import firebase from "firebase";
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import { State } from 'react-native-gesture-handler';
+
+// Set the app home screen using initialRouteName at line 87
 
 function HomeScreen({ navigation }) {
-
+  
   const [todos, setTodos] = useState([
     {text: 'Conan Exiles', key: '1'},
     {text: 'Stardew Valley', key: '2'},
@@ -81,7 +84,6 @@ const Stack = createStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      {/* Configure the home screen using initialRouteName below */}
       <Stack.Navigator initialRouteName="Home"> 
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="News" component={NewsScreen}   options={{ title: 'News' }}/>
