@@ -19,6 +19,7 @@
     "firebase": "^7.18.0",
     "firebaseui": "^4.6.1",
     "materialize-css": "^1.0.0-rc.2",
+    "moment": "^2.27.0",
     "newsapi": "^2.4.1",
     "react": "~16.11.0",
     "react-dom": "~16.11.0",
