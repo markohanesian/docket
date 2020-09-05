@@ -16,18 +16,19 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     header: {
-        height: 120,
+        height: 140,
         alignItems: 'center',
+        backgroundColor: '#111117',
     },
     title: {
-        paddingVertical: 0,
+        paddingBottom: 20,
         textAlign: 'center',
         color: '#2DCCCF',
         fontSize: 40,
         fontWeight: 'bold',
     },
     logo: {
-        paddingTop: 20,
+        paddingTop: 15,
         paddingBottom: 0,
     }
   });
