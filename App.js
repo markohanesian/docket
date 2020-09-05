@@ -1,14 +1,16 @@
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { State } from 'react-native-gesture-handler';
 import React, { useState } from 'react';
 import { Button, View, FlatList, StyleSheet, Text, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Header from './components/header';
 import TodoItem from './components/todoitem'
 import AddTodo from './components/addTodo';
+import Newspage from './screens/Newspage';
+// authentication
 import firebase from "firebase";
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import { State } from 'react-native-gesture-handler';
 
 // Set the app home screen using initialRouteName at line 87
 
@@ -72,9 +74,7 @@ function HomeScreen({ navigation }) {
 
 function NewsScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>News Screen</Text>
-    </View>
+    <Newspage />
   );
 }
 
