@@ -16,7 +16,6 @@ export default function AddTodo({ submitHandler }) {
                 placeholder='add a game to the docket...'
                 placeholderTextColor='white'
                 onChangeText={changeHandler}
-                // clearTextOnFocus='true'
             />
             <TouchableOpacity style={styles.btn} onPress={() => submitHandler(text)}>
                 <Text style={styles.btnText}>add game</Text>
