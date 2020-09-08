@@ -1,32 +1,33 @@
 import React from "react";
 import "react-native-gesture-handler";
-import { Button } from "react-native";
+// required imports for navigation package
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-// screens
-import Home from "./screens/Home";
-import News from "./screens/News";
+// custom component button for navigation
+import { Button } from "react-native";
+// components for pages
+import Header from './components/Header';
+import ToDoList from './components/ToDoList';
 // authentication
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
-
 
 function HomeScreen({ navigation }) {
   return (
     <>
       <Button title="Go to News" onPress={() => navigation.navigate("News")} />
-      <Home />
+      <Header />
+      <ToDoList />
     </>
   );
 }
 
-function NewsScreen() {
+function NewsScreen({ navigation }) {
   return (
-    // <Button
-    //   title="Go to Home"
-    //   onPress={() => navigation.navigate('Home')}
-    // />
-    <News />
+    <>
+      <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
+      <Header />
+    </>
   );
 }
 
