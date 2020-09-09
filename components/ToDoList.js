@@ -5,7 +5,7 @@ import 'react-native-gesture-handler';
 import React, { useState } from 'react';
 import { Button, View, FlatList, StyleSheet, Text, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Header from './Header';
-import TodoItem from './todoitem';
+import TodoItem from './ToDoItem';
 import AddTodo from './addTodo';
 
 const ToDoList = () => {
