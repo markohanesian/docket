@@ -4,7 +4,7 @@ import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 // themes via react-native-elements
-import { ThemeProvider, Button } from 'react-native-elements';
+import { Button } from 'react-native-elements';
 // components for pages
 import Header from './components/Header';
 import ToDoList from './components/ToDoList';
@@ -12,31 +12,22 @@ import ToDoList from './components/ToDoList';
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 
-const theme = {
-  Button: {
-    titleStyle: {
-      color: 'white',
-    },
-  },
-};
-
-
 function HomeScreen({ navigation }) {
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <Button title="Go to News" onPress={() => navigation.navigate("News")} />
       <Header />
       <ToDoList />
-    </ThemeProvider>
+    </>
   );
 }
 
 function NewsScreen({ navigation }) {
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
       <Header />
-    </ThemeProvider>
+    </>
   );
 }
 
