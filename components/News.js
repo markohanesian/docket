@@ -1,8 +1,7 @@
 import 'react-native-gesture-handler';
 import { State } from 'react-native-gesture-handler';
 import React, { Component } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import Header from './Header';
+import { View, StyleSheet } from 'react-native';
 
 const NewsPage = () => {
     return (
