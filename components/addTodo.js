@@ -12,19 +12,19 @@ export default function AddTodo({ submitHandler }) {
     return (
         <View>
             <TextInput 
-                style={styles.input}
+                style={addTodoStyles.input}
                 placeholder='add a game to the docket...'
                 placeholderTextColor='white'
                 onChangeText={changeHandler}
             />
-            <TouchableOpacity style={styles.btn} onPress={() => submitHandler(text)}>
-                <Text style={styles.btnText}>add game</Text>
+            <TouchableOpacity style={addTodoStyles.btn} onPress={() => submitHandler(text)}>
+                <Text style={addTodoStyles.btnText}>add game</Text>
             </TouchableOpacity>
         </View>
     )
 }
 
-const styles = StyleSheet.create({
+const addTodoStyles = StyleSheet.create({
     input: {
         marginBottom: 10,
         paddingHorizontal: 8,
