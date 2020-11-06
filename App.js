@@ -8,15 +8,12 @@ import { Button } from 'react-native-elements';
 // components for pages
 import Header from './components/Header';
 import ToDoList from './components/ToDoList';
-// authentication
-import firebase from "firebase";
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 
 function HomeScreen({ navigation }) {
   return (
     <>
-      <Button title="Go to News" onPress={() => navigation.navigate("News")} />
       <Header />
+      <Button title="Go to News" onPress={() => navigation.navigate("News")} />
       <ToDoList />
     </>
   );
@@ -25,8 +22,8 @@ function HomeScreen({ navigation }) {
 function NewsScreen({ navigation }) {
   return (
     <>
-      <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
       <Header />
+      <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
     </>
   );
 }
